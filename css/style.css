@@ -1,0 +1,222 @@
+.card-comments img {
+  width: 4rem;
+}
+
+.navbar-nav > li > a {
+  font: 700 13px Montserrat;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-size: 13px;
+  line-height: normal;
+  font-family: Montserrat;
+  /* padding: 0 14px; */
+}
+
+.navbar-brand {
+  padding: 15px 0px;
+}
+
+.language-control_list-mobile {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+/* COPY-PASTED PROTOTYPE SIDEBAR CODE */
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+body,
+html {
+  height: 100%;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: transparent;
+}
+
+/*-------------------------------*/
+/*           Wrappers            */
+/*-------------------------------*/
+
+.wrapper {
+  position: fixed;
+  top: 0px;
+}
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  /* padding-left: 220px; */
+  padding-left: 0px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  left: 220px;
+  width: 250px;
+  height: 100%;
+  margin-left: -220px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #000000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.invisiblee {
+  left: -30px !important;
+}
+
+#sidebar-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 220px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  padding-top: 70px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -220px;
+}
+
+/*-------------------------------*/
+/*     Sidebar nav styles        */
+/*-------------------------------*/
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+.sidebar-nav li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 3px;
+  -webkit-transition: width 0.2s ease-in;
+  -moz-transition: width 0.2s ease-in;
+  -ms-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+}
+
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+  width: 100%;
+  -webkit-transition: width 0.2s ease-in;
+  -moz-transition: width 0.2s ease-in;
+  -ms-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+}
+
+.sidebar-nav li a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  padding: 10px 15px 10px 5px;
+  font: 700 13px Montserrat;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover,
+.sidebar-nav li.open a:active,
+.sidebar-nav li.open a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 20px;
+  line-height: 44px;
+}
+.sidebar-nav .dropdown-menu {
+  position: initial;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  background-color: #222;
+  box-shadow: none;
+}
+
+.navbar .dropdown-menu a {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.top-navbar .dropdown-menu a {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #000;
+}
+
+.normal-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav > li > a > img {
+  max-width: 100%;
+}
+
+.dropdown-toggle {
+  padding: 0.5rem 1rem;
+}
+
+a {
+  color: #000;
+}
+
+.navbar .dropdown-menu {
+  position: initial;
+  margin-top: 0;
+}
